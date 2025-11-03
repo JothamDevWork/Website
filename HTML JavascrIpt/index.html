@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <p id="Javascript">This is Javascript</p>
+  <button onclick="changetext()">Change text</button>
+  <button onclick="changestyle()">Change style</button>
+
+    <img id="Bulb" src="/IMAGES/offbulb.jpg">
+  <p>
+    <button type="button" onclick="light(1)">On</button>
+    <button type="button" onclick="light(0)">Off</button>
+  </p>
+
+  <script>
+    let text = document.getElementById("Javascript");
+    function changetext(){
+      text.innerHTML = "Hello Jotham";
+    }
+    function changestyle(){
+      text.style.color = "red";
+      text.style.backgroundColor = "yellow";
+      text.style.fontSize = "15px";
+    }
+
+    function light(sw){
+      let image = document.getElementById("Bulb");
+      let picture;
+
+      if (sw == 0) {
+        image.src = "/IMAGES/offbulb.jpg";
+      } else {
+        image.src = "/IMAGES/onbulb.jpeg";
+      }
+      
+    }
+  </script>
+
+</body>
+</html>
