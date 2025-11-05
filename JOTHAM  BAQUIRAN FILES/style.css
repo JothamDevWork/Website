@@ -1,0 +1,65 @@
+html, body{
+  height: 100%;
+  margin: 0;
+}
+
+
+.box{ 
+  height: 10%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#first{
+
+  background-color: green;
+}
+
+#second{
+  background-color: red;
+
+}
+
+#last{
+  background-color: yellow;
+
+}
+
+@media(min-width : 320px){
+  #first{
+    width: 10%
+  }
+   #second{
+    width: 10%
+  }
+   #last{
+    width: 10%
+  }
+}
+
+
+@media(min-width : 600px){
+ #first{
+  width: 20%;
+ }
+ #second{
+  width: 40%;
+ }
+ #last{
+  width: 20%;
+ }
+}
+
+@media(min-width : 1024px){
+  #first{
+    width: 20%;
+  }
+  #second{
+    width: 20%;
+  }
+  
+  #last{
+    width: 20%;
+  }
+}
